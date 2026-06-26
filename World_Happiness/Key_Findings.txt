@@ -1,0 +1,38 @@
+This folder contains a small data visualization project based on the annual World Happiness Report datasets, available at: https://www.kaggle.com/datasets/unsdsn/world-happiness/data
+
+The available datasets cover the years 2015, 2016, 2017, 2018 and 2019.
+
+The datasets include the following variables (see the source website for detailed descriptions):
+
+- Country
+- Region
+- Happiness Rank
+- Happiness Score
+- GDP per Capita, 
+- Family, 
+- Life Expectancy, 
+- Freedom, 
+- Generosity, 
+- Government Corruption
+
+Additionally, 2015, 2016, 2017 also have the 'Dystopia Residuals' column. 2016 and 2017 present the lower and upper 'Confidence Interval'. 2015 also presents the 'Standard Deviation' column. All these variables were not applied to the visualization analysis because these variables are not available in all datasets.
+
+Each script file contains explanations and their steps.
+
+# SCRIPT FILE:
+The datasets were cleaned, harmonized and merged into a single final dataset.
+In total, 142 countries are presented in the complete dataset. Only one of them contains one missing value (UAE, Government Corruption 2018)
+
+# CORR_HEAT_MAP FILE
+Here, a correlation heat map was performed to investigate the correlation among the variables (specifically, for year 2019). The heatmap highlights the strong positive correlation between the Happiness Score and the GDP per Capita, Life Expectancy and Family variables. Interestingly, Generosity and Happiness Score did not show correlation.
+
+# SCATTER_PLOT FILE
+Here, a scatter plot was performed to explore the relationship between Happiness Score and GDP per capita by Region. The scatter plot clearly shows the positive relationship between GDP per capita and Happiness Score.
+The regions with the highest Happiness Scores also tend to have the highest GDP per capita. These regions are Western Europe, North America, and Australia and New Zealand. The Sub-Saharan African region showed the lower Happiness Scores.
+
+# DELTA_HAPPINESS_PLOT
+Here, a horizonal bar chart was performed to study which countries showed the largest changes in the Happiness Score from 2015 to 2019. This metric, referred to as Delta Happiness, was computed through the difference between the scores in 2019 and 2015 and converted in percentage. 
+The visualization shows the 10 countries that had the highest increments and the 10 countries that had the 10 largest decreases. 
+Among the countries that belong to the first group, the majority is located in the African continent with Benin (46,20%), Togo (43,89%), and Ivory Coast (35,27%) that showed the most positive change. 
+Among the countries that had the highest decrease, the majority is still located in the African continent. Venezuela showed the highest decrease (-30.88%).
+These changes are also reflected in the variation of each country's Happiness Ranking between 2015 and 2019.
