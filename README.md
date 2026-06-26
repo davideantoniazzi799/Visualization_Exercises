@@ -3,7 +3,7 @@
 Repository that contains personal exercises regarding several topics.
 
 ## Repository Purpose
-Project goals
+Project goals:
 - Practice data cleaning with Pandas and R;
 - Produce publication-quality visualizations using Matplotlib;
 - Improve exploratory data analysis skills;
