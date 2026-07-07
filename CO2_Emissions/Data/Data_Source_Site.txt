@@ -1,0 +1,6 @@
+Source Data to download to perform the script:
+
+https://github.com/owid/co2-data (format .CSV)
+Dataset name: CO2 and Greenhouse Gas Emissions dataset
+
+Data were not uploaded due to memory space
