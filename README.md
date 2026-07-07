@@ -7,7 +7,7 @@ Project goals:
 - Practice data cleaning with Pandas and R;
 - Produce publication-quality visualizations using Matplotlib;
 - Improve exploratory data analysis skills;
-- Build a portfolio of data visualization projects;
+- Build a portfolio of data visualization projects
 
 ## Folder Structure
 Each specific folder focuses on one of these theme. 
