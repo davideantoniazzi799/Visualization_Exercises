@@ -1,0 +1,102 @@
+Global Electricity Production From Renewable Project
+
+This folder contains a small data visualization project based on the Energy dataset provided by Our World in Data (OWID).
+
+The source website, including the full Codebook, is provided in the text file 'Data_Source_Site.txt' in the Data folder. To reproduce the visualizations, first download the data in CSV format from the provided source.
+This project uses R as the programming language to perform the data cleaning, analysis, and visualizations. The resulting images are available in the 'Image' folder in PDF format.
+The 'Script' folder contains a single SCRIPT file in which all data cleaning steps and visualizations are coded.
+
+Below is a description of each step. For each visualization, an analysis of the main results is also provided.
+
+1) Libraries
+
+The required libraries are loaded. If they are not already available in your R environment, they must first be installed.
+These libraries are used to clean and manipulate the dataset and to create the visualizations with additional tools.
+
+2) Data Import and Cleaning
+
+The dataset is imported and cleaned. Due to their specific notation and characteristics, some observations in the 'country' variable are excluded.
+Additionally, Curaçao, Micronesia, and Tuvalu are excluded due to a lack of data for the variables used in the analysis.
+
+3) First Visualization: Line Graph Representing the Share of Electricity Production from Renewables
+
+Image file:'renewable_electricity_share.pdf'
+
+The visualization represents the share of electricity produced from renewable sources for each G20 member. Additionally, the remaining independent countries are grouped into an 'Other' category.
+The analysis ranges from 1990 to the latest available year (2025). The countries included in the 'Other' group are represented through their average share of electricity produced from renewables for each year.
+
+Results:
+The plots show different situations across countries. While some countries have a high, if not almost total, share of electricity generated from renewable sources, others show a very low or almost nonexistent share.
+Brazil and Canada show the highest shares, whereas Saudi Arabia, South Africa, and South Korea show the lowest. The latter two only started producing electricity from renewable sources more significantly from around 2015 onward.
+Several countries show relatively little change in their share of electricity generated from renewables, such as India, Indonesia, Mexico, and Russia.
+Other countries, particularly European countries and Australia, show a clear increase compared with 1990.
+No country shows a clear reduction in the share of electricity generated from renewable sources over the period.
+The 'Other' group also shows an increase in the proportion of electricity generated from renewables.
+Overall, the results suggest that renewable energy sources have become increasingly important for electricity generation.
+
+4) Second Visualization: Stacked Area Graph Representing the Evolution of Global Electricity Sources
+
+Image file: 'Electricity_production_sources.pdf'
+
+The visualization represents how global electricity generation has changed over time, considering its different sources. The analysis ranges from 1985 to 2025 and covers the entire world.
+The different colours represent the various electricity sources, which are expressed as their percentage share of global electricity generation.
+
+Results:
+The plot shows the ongoing strong dependency on non-renewable sources in 2025, which account for around 70% of global electricity generation.
+However, it is noticeable that renewables have become more widely used compared with 1985. In 2025, they represent approximately 30% of global electricity generation, compared with around 20% in 1985.
+Solar and wind power have become increasingly important renewable sources, while hydropower remains the main renewable source of electricity generation.
+Among non-renewable sources, coal remains the most widely used source and does not show a clear decline over the period.
+In contrast, electricity generation from oil has decreased substantially and now represents only a very small share. The use of gas for electricity generation has increased considerably.
+
+5) Third Visualization: Dumbbell Plot Representing the Change in the Share of Electricity Generated from Renewables among G20 Members
+
+Image file: 'Renewable_dumbbell_g20.pdf'
+
+The plot represents the change in the share of electricity generated from renewable sources for each G20 member between 1995 and 2023. Africa and the European Union (27) are also included as regional entities.
+
+Results:
+The findings confirm the general pattern observed in the first visualization. In particular, the dumbbell plot shows how much the share of electricity generated from renewable sources changed for each country over the period.
+The countries are ordered from the highest share of electricity generated from renewables in 2023 (Brazil) to the lowest (Saudi Arabia).
+European countries generally show some of the largest increases, while the countries mentioned in the first visualization as having relatively little change show smaller increases.
+Both Africa and the EU-27 show an increase in the share of electricity generated from renewables. The EU-27 shows a particularly strong increase, which is consistent with the increasing importance of renewable energy within European energy policies.
+
+6) Fourth Visualization: Scatter Plot Representing the Relationship between GDP per Capita and the Share of Electricity Generated from Renewables
+
+Image file: 'Scatter_Renewable_Share_GDPcapita.pdf'
+
+The plot represents the relationship between GDP per capita, expressed in 2011 international dollars and displayed using a logarithmic scale, and the share of electricity generated from renewable sources, expressed as a percentage, for countries around the world in 2022.
+In addition to the countries excluded during the general data-cleaning process, 26 additional countries are excluded due to a lack of GDP data for 2022.
+These countries are:
+- Antigua and Barbuda
+- Bahamas
+- Belize
+- Bermuda
+- Bhutan
+- Brunei
+- East Timor
+- Eritrea
+- Fiji
+- Grenada
+- Guyana
+- Kiribati
+- Kosovo
+- Maldives
+- Nauru
+- Papua New Guinea
+- Saint Kitts and Nevis
+- Saint Vincent and the Grenadines
+- Samoa
+- Somalia
+- South Sudan
+- Sudan
+- Suriname
+- Tonga
+- Vanuatu
+
+The represented countries are coloured according to their continent and sized according to their population.
+
+Results:
+The findings show a clear spatial pattern in GDP per capita, with African countries generally showing lower values, while the majority of Asian, European, and Oceanian countries show higher values.
+Every continent contains countries with either a very high or a very low share of electricity generated from renewable sources.
+The overall pattern appears to suggest that, as GDP per capita increases, the share of electricity generated from renewable sources tends to decrease, although this relationship was not statistically tested.
+The countries with the largest populations, such as India, China, and the United States, show relatively low shares of electricity generated from renewable sources.

@@ -1,0 +1,9 @@
+Source Data to download to perform the script:
+
+https://github.com/owid/energy-data/blob/master/owid-energy-codebook.csv (format .CSV)
+Dataset name: Energy dataset
+
+Full Codebook source:
+https://github.com/owid/energy-data/blob/master/owid-energy-codebook.csv
+
+Data was not uploaded due to memory space
