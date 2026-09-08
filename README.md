@@ -12,8 +12,8 @@ Project goals:
 ## Folder Structure
 Each specific folder focuses on one of these theme. 
 Each folder contains sub-folders divided into:
-- *Script* folder: containing the code scripts both for the data cleaning and visualizations. Due to memory size, this folder is empty in some projects. To download the needed dataset, follow the instructions provided in the .txt file inside this folder;
-- *Data* folder: containing the original and cleaned datasets used to perform the visualizations;
+- *Script* folder: containing the code scripts both for the data cleaning and visualizations;
+- *Data* folder: containing the original and cleaned datasets used to perform the visualizations. Due to memory size, this folder is empty in some projects. To download the needed dataset, follow the instructions provided in the .txt file inside this folder;
 - *Images* folder: containing the produced visualizations;
 - *Key Findings* text file: containing analysis of the visualizations
 
