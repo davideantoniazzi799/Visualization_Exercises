@@ -1,0 +1,67 @@
+Global Development, Health & Inequality
+
+This folder contains a small data visualization project based on the World Development Indicators dataset provided by the World Bank Group.
+
+The source website, including the sources for each dataset used, is provided in the text file 'Notes.txt' in the 'Data' folder. To reproduce the visualizations, first download the data in CSV format from the provided sources.
+This project uses R as the programming language to perform data cleaning, analysis, and visualization. The resulting images are available in the 'Image' folder in PDF format.
+The 'Script' folder contains a single script file in which all data cleaning steps and visualizations are coded.
+
+Below is a description of each step. For each visualization, an analysis of the main results is also provided.
+
+1) Libraries
+
+The required libraries are loaded. If they are not already available in your R environment, they must first be installed.
+These libraries are used to clean and manipulate the datasets and to create the visualizations with additional tools.
+
+2) Data Import and Cleaning
+
+The datasets are imported and cleaned. Only Kosovo was removed in the fourth visualization due to missing data.
+
+3) First Visualization: Line Graph Representing the Worldwide Regional Under-5 Mortality Rate from 1990 to 2024
+
+Image file: 'Under5_Mortality_Rate.pdf'
+
+The visualization represents how the mortality rate (defined as deaths per 1,000 live births) changed over the period 1990-2024 across world regions, including the World as a whole.
+
+Results:
+The plots show different situations across regions.
+Some regions showed very low mortality rates throughout the entire period, whereas other regions had very high mortality rates in 1990, which decreased substantially over the period.
+Europe, most of the Americas, and most Asian regions showed the lowest mortality rates.
+Almost all African regions reported very high mortality rates in 1990. As of 2024, these regions reported substantial decreases in the rates. The Sub-Saharan Africa Western and Central region still reports around 100 deaths per 1,000 live births among children under five.
+The South Asia region also reported a strong decrease in the mortality rate over the period, reaching less than 40 deaths per 1,000 live births in 2024.
+Generally speaking, the World reported a decrease in the mortality rate over the period. While the rate was close to 100 deaths per 1,000 live births in 1990, it dropped to almost 40 in 2024.
+Additionally, African regions showed a more drastic pace of reduction compared to other regions that experienced a decrease. On the other hand, European and American regions, especially North America, showed neither a substantial reduction nor an increase, as the mortality rate remained relatively low throughout the period.
+
+4) Second Visualization: Ridgeline Plot Representing Life Expectancy Distribution by World Region
+
+Image file: 'Life_Expectancy_RidgePlot.pdf'
+
+The visualization represents how the distribution of life expectancy has changed over time across world regions, represented by the different colors. The analysis considers the years 1960, 1980, 2000, and 2023.
+
+Results:
+The visualization shows how average life expectancy increased worldwide from 1960 to 2023. While in 1960 some regions had an average life expectancy slightly above 40 years, this increased to slightly more than 60 years in 2023.
+Analyzing the individual regions, the Sub-Saharan African region had the shortest life expectancy in each of the years considered. However, while in 1960 the distribution was flatter and more spread out, it gradually changed over the period, almost reaching a bell shape in 2023, while the average life expectancy increased from almost 40 to 60 years.
+The same pattern can be observed in other regions that had lower life expectancy in 1960 and a flatter distribution around 40 years, which became more bell-shaped in 2023, together with an increase of almost 20 years in life expectancy. North America always had the highest average life expectancy, at around 70 years in 1960 and around 80 years in 2023.
+This shows how the differences in life expectancy between several regions decreased from 1960 to 2023, with regions that had higher life expectancy in 1960 experiencing smaller increases than regions that had lower average life expectancy in the same year.
+
+5) Third Visualization: Scatter Plot Representing the Relationship Between GDP per Capita and Life Expectancy with Marginal Distributions for Each Country in 2023
+
+Image file: 'GDPcapita_LifeExpectancy_Marginal.pdf'
+
+The plot represents the relationship between GDP per capita (measured in 2015 US dollars and transformed to a log scale) and life expectancy (in years) for each country in 2023. The marginal distributions of both variables are represented alongside the main chart. Points are sized according to population and colored according to the regions to which the countries belong.
+
+Results:
+The visualization clearly shows a positive relationship between GDP per capita and life expectancy. It is noticeable that countries with higher GDP per capita tend to have higher life expectancy.
+Analyzing the individual regions, it is possible to notice the difference between Europe & Central Asia and Sub-Saharan Africa. While most countries in the first region lie in the upper-right area of the graph, the majority of countries in the African region lie in the lower-left area. The observations in the central part of the graph belong to several different regions.
+The distributions of the two variables show that the average GDP per capita is slightly below $10,000, while the average life expectancy is around 75 years.
+
+6) Fourth Visualization: Choropleth Map Representing Access to Electricity (as % of Total Population) for Each Country in 2023
+
+Image file: 'AccessElectricity_Map.pdf'
+
+The map represents the percentage of the population with access to electricity in each country, with lower values represented by darker colors, in 2023.
+
+Results:
+The map clearly shows that, outside the African continent, almost all countries have populations with access to electricity. Papua New Guinea is the only non-African country to show a critical value, at around 20%.
+On the other hand, only a few African countries have 100% of their population with access to electricity. These countries are all located along the Mediterranean Sea. The rest of the continent does not show any other countries with 100% access.
+The distribution changes according to the geographical location of the countries. Countries bordering the Atlantic or Indian Ocean have values ranging from 50% to 80%, whereas countries in Central and Sub-Saharan Africa recorded much lower values, below 50%.

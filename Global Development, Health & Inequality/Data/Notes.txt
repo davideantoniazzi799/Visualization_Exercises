@@ -1,0 +1,31 @@
+Source Data to download to perform the script:
+https://databank.worldbank.org/reports.aspx?source=world-development-indicators
+
+Mortality Rate Data:
+- Series Name: Mortality rate, under-5 (per 1,000 live births)
+- Source: UN Inter-agency Group for Child Mortality Estimation, UN Children's Fund (UNICEF), uri: www.childmortality.org, publisher: UNICEF, WHO, World Bank, United Nations Population Division;
+World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation;
+World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation;
+United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation, publisher: UN Population Division
+
+Life expectancy at birth Data:
+- Series Names: Life expectancy at birth, total (years)
+- Source: World Population Prospects, United Nations (UN), uri: UN Population Division; 
+Statistical databases and publications from national statistical offices, National Statistical Offices (NSOs), note: Derived from male and female life expectancy at birth from sources such as statistical databases and publications from national statistical offices.; 
+Demographic Statistics, Eurostat (ESTAT), note: Derived from male and female life expectancy at birth from sources such as Eurostat: Demographic Statistics.
+
+GDP per capita vs Life Expectancy Data:
+- Series Name: Population, total
+- Source: World Population Prospects, United Nations (UN), uri: https://population.un.org/wpp/, publisher: UN Population Division; Statistical databases and publications from national statistical offices, National Statistical Offices (NSOs), uri: https://unstats.un.org/home/nso_sites/, publisher: National Statistical Offices; 
+Eurostat: Demographic Statistics, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/data/database?node_code=earn_ses_monthly, publisher: Eurostat; 
+Population and Vital Statistics Report (various years), United Nations (UN), uri: https://unstats.un.org, publisher: UN Statistics Division
+- Series Name: GDP per capita (constant 2015 US$):
+- Source: Country official statistics, National Statistical Organizations and/or Central Banks; 
+National Accounts data files, Organisation for Economic Co-operation and Development (OECD); 
+Staff estimates, World Bank (WB)
+- Series Name: Life expectancy at birth, total (years)
+- Source: see above
+
+Access to electricity (% of population) Data:
+- Series Name: Access to electricity (% of population)
+- Source: SDG 7.1.1 Electrification Dataset, World Bank (WB), uri: https://trackingsdg7.esmap.org/downloads, note: Data is downloaded from ESMAP website. Data is released when a new Tracking SDG7 report is released., publisher: World Bank (WB), date accessed: 2024-05-16, date published: 2023
