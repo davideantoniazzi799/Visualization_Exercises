@@ -5,7 +5,7 @@ Repository that contains personal exercises regarding several topics.
 ## Repository Purpose
 Project goals:
 - Practice data cleaning with Pandas and R;
-- Produce publication-quality visualizations using Matplotlib;
+- Produce publication-quality visualizations using Matplotlib and ggplot2;
 - Improve exploratory data analysis skills;
 - Build a portfolio of data visualization projects
 
