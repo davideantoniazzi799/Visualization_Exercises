@@ -17,7 +17,7 @@ Each folder contains sub-folders divided into:
 - *Images* folder: containing the produced visualizations;
 - *Key Findings* text file: containing analysis of the visualizations
 
-**NOTE**: Visualization scripts have the saving image command commented. To save the charts in your device, uncomment those code lines.
+**NOTE**: Some visualization scripts have the saving image command commented. To save the charts in your device, uncomment those code lines.
 
 ## Programming Languages
 Python and R
