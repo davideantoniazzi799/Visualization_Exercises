@@ -1,0 +1,41 @@
+The data regarding the street trees distribution in Berlin at a district level in 2025 can be found at: https://daten.berlin.de/
+
+Berlin Open Data is a free data source that provide numerous datasets and measurements of Berlin. 
+
+STEPS TO DOWNLOAD THE 2025 STREET TREES DISTRIBUTION AT A DISTRICT LEVEL ACROSS BERLIN:
+
+1) After opening the above link, on the search bar type "Baumbestand Berlin" (which stands for "Tree inventory Berlin");
+
+2) In the "Facettierung" ("Faceting") select the WFS option and apply the filter;
+
+3) The page should show you the dataset on top. Click on "Details" to continue;
+
+4) The next page has details regarding this dataset. Scroll to the end of the page to the "Ressourcen" section ("Resource") and click on "Ansicht im WFS-Explorer" ("View in WFS Explorer") (more specifically, click on the right on "Zur Ressourcen" ("To the resource"));
+
+5) This page will open the WFSExplorer. In the layers menu, click on "Baumbestand Berlin - Straßenbäume" ("Tree population of Berlin - street trees"). This will open the interactive map. Scroll to the bottom of the page to the download section and select the .csv file. When downloaded, save the file with the name reported in the R script of this visualization (2_Street_Trees_Berlin_2025.R). The direct link to this page is https://daten.berlin.de/datensaetze/baumbestand-berlin-wfs-48ad3a23
+
+DESCRIPTION OF THE DATA:
+Data provides information on the number of registered street trees across Berlin. Specifically, the dataset provides information on tree species, address, planting year, height, etc., as well as street trees without factual data.
+Note: the dataset was uploaded in Febraury, 2024 and the last update was in April, 2026. In this exercises, the reference year is 2025, for the sake of simplicity. 
+
+DATA SOURCE CITATION:
+Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt Berlin / [22/09/2026]
+
+
+STEPS TO DOWNLOAD THE BERLIN DISTRICTS MAP:
+
+1) After opening the above link (https://daten.berlin.de/), on the search bar type "ALKIS Berlin Bezirke" (which stands for "ALKIS Berlin Districts");
+
+2) In the "Facettierung" ("Faceting") select the WFS option and apply the filter;
+
+3) Select the first dataset and click on "Details";
+
+4) The next page has details regarding this dataset. Scroll to the end of the page to the "Ressourcen" section ("Resource") and click on "Ansicht im WFS-Explorer" ("View in WFS Explorer") (more specifically, click on the right on "Zur Ressourcen" ("To the resource"));
+
+5) This page will open the WFSExplorer. Scroll to the bottom of the page to the download section and select the .geojson file. When downloaded, save the file with the name reported in the R script of this visualization (2_Street_Trees_Berlin_2025.R). The direct link to this page is https://wfsexplorer.odis-berlin.de/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwfs%2Falkis_bezirke
+
+DESCRIPTION OF THE DATA:
+Data provides the geospatial information on the borders of the Berlin's districts. Specifically, the dataset provides information on Berlin district boundaries, derived from the ALKIS database.
+
+DATA SOURCE CITATION:
+Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin / [22/09/2026]

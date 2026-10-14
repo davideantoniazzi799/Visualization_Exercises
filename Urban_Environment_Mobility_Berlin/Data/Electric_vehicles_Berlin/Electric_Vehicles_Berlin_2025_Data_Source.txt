@@ -1,0 +1,19 @@
+The data regarding the share of Electric Vehicles (EV) in Berlin at a district level in 2025 can be found at: https://daten.berlin.de/
+
+Berlin Open Data is a free data source that provide numerous datasets and measurements of Berlin. 
+
+STEPS TO DOWNLOAD THE 2025 EV SHARE AT A DISTRICT LEVEL IN BERLIN:
+
+1) After opening the above link, on the search bar type "Elektrofahrzeuge" (which stands for "Electric Vehicles");
+
+2) The page that will be opened should contain two datasets, one in WMS format and one in WFS format. Click on the WFS format dataset;
+
+3) The next page has details regarding this dataset. Scroll to the end of the page to the "Ressourcen" section ("Resource") and click on "Ansicht im WFS-Explorer" ("View in WFS Explorer") (more specifically, click on the right on "Zur Ressourcen" ("To the resource"));
+
+4) This page will open the WFSExplorer. In the menu of the available layers, click on "Kfz - Bestand je Bezirk (2025)". This will open the interactive map. Scroll to the bottom of the page to the download section and select the .csv file. When downloaded, save the file with the name reported in the R script of this visualization.
+
+DESCRIPTION OF THE DATA:
+Data provides information on the number of registered motor vehicles per district in Berlin in 2025. Within the EV category are included battery electric vehicles and plug-in hybrids.
+
+DATA SOURCE CITATION:
+Amt für Statistik Berlin-Brandenburg/Elektrofahrzeuge / [22/09/2026]

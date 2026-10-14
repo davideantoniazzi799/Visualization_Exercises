@@ -1,0 +1,60 @@
+Urban Environment and Mobility in Berlin
+
+This folder contains a small data visualization project based on the Open Berlin Data websites which provides several datasets focusing on different characteristics of the German capital. (https://daten.berlin.de/)
+
+Everything (data cleaning, analysis, and visualization) was performed with RStudio. 
+
+In the 'Data' folder there are several folders, representing the different topic that were analyzed and used as base for the final visualizations. Inside each of these folders, a data source .txt file describes where and the steps to follow to download each dataset applied in this exercise. Datasets are not provided directly for memory saving purposes. You are invited to renamed the downloaded datasets as done in the single R scripts or change those names on your own.
+
+In the "Scripts" folder there are the single R code scripts that were used and develop to produce the visualizations, ordered by number.
+
+This exercises focuses on these topics and produced visualizations about them (with name of the R file):
+- Berlin NO2 average (1_Berlin_NO2_average.R);
+- Berlin Street Trees distribution (2_Street_Trees_Berlin_2025.R);
+- Berlin Electric Vehicles Share (3_Berlin_Electric_Vehicles_Share_District.R);
+- Berlin Thermal Stress and Social Disadvantage (4_Berlin_ThermalStress_SocialDisadvantage_Map.R)
+
+The 'Image' folder contains the visualizations (in .pdf format) produced in this exercises. Here, an analysis of them and of the results is presented for each topic, following the order of the R scripts.
+
+- BERLIN NO2 AVERAGE:
+
+Images file: NO2_Berlin_daily_avg_2000_2025.pdf and NO2_calendar_2025.pdf
+
+These visualizations investigate nitrogen dioxide (NO2) concentrations across Berlin. NO2 is a toxic, irritating gas emitted by sources such as motor vehicle exhausts, heating systems, power plants, and high-temperature industrial processes. It negatively affects human health, contributing to respiratory irritation, reduced lung function, and the exacerbation of asthma. It also affects the environment by contributing to the formation of photochemical smog and tropospheric ozone, as well as to acidification.
+The image 'NO2_Berlin_daily_avg_2000_2025.pdf' visualizes the historical evolution of daily mean NO2 concentrations in Berlin between 2000 and 2025. Each tile represents the daily average concentration, measured in µg/m^3. The vertical axis indicates the day of the week, while the horizontal axis indicates the week of the year. The continuous color scale represents daily mean NO2 concentrations, with yellow shades indicating higher concentrations and blue shades indicating lower concentrations.
+The visualization shows a clear change in daily mean NO₂ concentrations over the period studied. The earlier years generally display higher concentrations, represented by lighter or yellower shades, than the more recent years. In the winter weeks of the early 2000s, several days exhibited relatively high daily mean concentrations. By contrast, the calendar for 2025 shows generally lower concentrations throughout the year, although some day-to-day and seasonal variation remains.
+The earlier years also appear to show a more pronounced difference between colder and warmer periods. Winter and late-autumn days generally exhibit higher concentrations than many spring and summer days. Several factors could contribute to this pattern, including seasonal differences in atmospheric conditions, pollutant dispersion, and emissions. However, the relationship between these factors and the observed concentrations was not investigated in this exercise. The seasonal contrast also appears less pronounced in the more recent years. The reasons for the long-term decline and the changes in seasonal patterns were beyond the scope of this analysis.
+
+Images file: NO2_calendar_2025.pdf
+
+This image examines daily mean NO2 concentrations across Berlin during 2025 using a calendar-based visualization. It allows the reader to compare concentration levels across different months and days of the week.
+A seasonal difference is visible: January, February, and March generally exhibit higher daily mean concentrations than June, July, and August. More broadly, the November-March period appears to have higher concentrations than much of the May-September period.
+The visualization also suggests a difference between weekdays and weekends. Weekdays appear to exhibit higher concentrations than weekends on several occasions, particularly during the colder months. This contrast is less evident during the summer. These patterns are descriptive and do not establish that differences in traffic or human activity caused the observed variation.
+
+- BERLIN STREET TREES DISTRIBUTION:
+
+Image: Berlin_Street_Trees_Analysis.pdf
+
+This visualization combines two perspectives on Berlin's street-tree population: the most common tree genera and their spatial density across the city's administrative districts. Street trees are trees growing along streets and roads. Therefore, this analysis does not represent the entire tree population of Berlin and excludes trees outside the dataset's coverage, such as those in parks and private gardens. The analysis refers to 2025.
+The lollipop plot on the left shows the most common street-tree genera by absolute count. Tilia is the most common genus, with more than 150000 trees, followed by Acer, with approximately 90000, and Quercus, with approximately 39000. It would be interesting to investigate why Tilia is so prevalent in Berlin's street-tree population, but this question was not explored in the present analysis.
+The map on the right shows the density of street trees across Berlin's administrative districts, expressed as the number of trees per square kilometer. Based on the calculated values, Mitte and Marzahn-Hellersdorf have the highest densities, while Spandau and Treptow-Köpenick have the lowest.
+These results may suggest differences in the distribution of street trees between central and peripheral districts. However, the analysis covers street trees rather than all trees or green spaces in Berlin. Districts with a lower density of street trees may still contain substantial tree cover or extensive green areas that are not captured by this indicator.
+The size and characteristics of each district also matter when interpreting the results. Density is calculated as the number of trees divided by the district's land area. A district with a larger area may have a lower density even if it contains a considerable number of trees. Mitte, for example, is a relatively small and highly urbanized district, and these characteristics may help explain its high street-tree density. Nevertheless, the analysis does not establish the causes of the differences between districts.
+
+- BERLIN ELECTRIC VEHICLE SHARE
+
+Image: Electric_Vehicles_Berlin_2025_Lollipop.pdf
+
+The visualization presents the share of electric vehicles (EVs) in each Berlin administrative district in 2025, expressed as a percentage of the total vehicle population in that district. In this dataset, electric vehicles include battery electric vehicles and plug-in hybrid vehicles.
+Mitte and Friedrichshain-Kreuzberg have the highest EV shares, while Marzahn-Hellersdorf and Neukölln have the lowest. The specific factors underlying these differences were not investigated in this exercise.
+Differences in urban structure, household characteristics, vehicle ownership patterns, charging infrastructure, and transport needs could potentially help explain the observed variation. However, these are possible explanations rather than conclusions supported by this visualization. Furthermore, the analysis focuses on the percentage of vehicles rather than their absolute numbers. Consequently, a district with a higher EV share does not necessarily have the largest number of electric vehicles.
+
+- BERLIN SOCIAL DISADVANTAGE AND THERMAL STRESS:
+
+Image: ThermalStress_SocialDisadvantage_Berlin_Bivariate_Map.pdf
+
+This visualization presents the joint classification of thermal stress and social disadvantage across Berlin in 2023/2024. Both indicators are part of a broader environmental justice assessment conducted by the city's authorities.
+The analysis uses "Planungsräume", referred to as planning areas in English, which are small territorial units used for urban planning and statistical analysis. The definitions of thermal stress and social disadvantage, together with details of their calculation, are documented in the source materials stored in the 'ThermalStress_SocialVulnerability_Berlin' folder within the 'Data' directory.
+The bivariate map combines the two indicators, each classified into low, medium, and high categories. According to the legend, darker colors represent planning areas with high levels of both thermal stress and social disadvantage, while lighter colors represent areas with low levels of both indicators. The stronger red shades indicate high thermal stress combined with low social disadvantage, whereas the stronger blue shades indicate high social disadvantage combined with low thermal stress.
+The map suggests a spatial pattern in which some central planning areas exhibit higher levels of both indicators, while many areas farther from the centre display different combinations of thermal stress and social disadvantage. These differences highlight the value of considering environmental conditions and social circumstances together when examining environmental justice.
+One possible explanation for spatial differences in thermal stress is variation in urban form, vegetation, and the availability of green spaces. More densely built-up areas may experience greater heat exposure than areas with more vegetation, although this relationship depends on local conditions. Similarly, the distribution of social disadvantage may reflect a range of socioeconomic and demographic factors. However, neither the causes of the observed spatial patterns nor the relationships between the indicators were investigated in this exercise. The findings should therefore be interpreted as descriptive rather than causal.

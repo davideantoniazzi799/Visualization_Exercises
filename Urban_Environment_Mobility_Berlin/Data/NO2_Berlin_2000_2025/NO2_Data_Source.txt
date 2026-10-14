@@ -1,0 +1,33 @@
+The data regarding at the daily NO2 concentrations in Berlin can be found at: https://daten.berlin.de/
+
+Berlin Open Data is a free data source that provide numerous datasets and measurements of Berlin. 
+
+STEP TO DOWNLOAD THE DAILY NO2 DATATSET:
+
+1) After opening the above link, on the search bar type "Luftqualität" (which stands for air quality);
+
+2) In the page that opens, in the "Facettierung" options (Faceting), select CSV as Format. There should be indicated (1) next to CSV, suggesting that there is only one dataset with CSV format and click "Jetzt filtern" (Filter now);
+
+3) The page will upload and show the only dataset with .csv format. Its name should be "Luftgütemessdaten". Click on details;
+
+4) A new page will open. Scroll down to the "Ressourcen" section (Resources). In the "Messdaten - Stickstoffdioxid (NO₂)" option (Measurement data - Nitrogen dioxide (NO₂), click on "Zur Ressourcen" (To the resource);
+
+5) A new page will open. Here, it is possible to visualize and custom the dataset. The following parameters were set: 
+- Station group: All;
+- Measurement period: Daily values;
+- Period: Own information.
+
+Setting the period allowed to select the specific dates. The analysis utilized daily data from 1/1/2000 to 31/12/2025. Though, it is not possible to select this range since the longer period that can be selected is 10 years. Therefore, to download the data, it is necessary to download three .csv datasets with the following dates:
+- from 31/12/2015 to 31/12/2025;
+- from 31/12/2005 to 30/12/2015;
+- from 31/12/2000 to 30/12/2005.
+
+6) After setting the parameters as described above, click on "Save data as CSV". This will start the download of the data for the applied parameters. The advice is to rename the downloaded dataset with the same file names indicated in the R scripts where the visualization regarding NO2 is done.
+
+DESCRIPTION OF THE DATA:
+Data comes from daily measures of all the stations group within the Berlin area. To derive the final daily average of NO2, the average of all the group stations for a specific day was performed. The website reports:
+"Nitrogen dioxide, measured at standard measurement height above the roof of the measuring container (at approximately 3.5-4 m height) using automatic measuring devices"
+
+DATA SOURCE CITATION:
+luftdaten.berlin.de - Berlin Air Quality Monitoring Network / [22/09/2026]
+
