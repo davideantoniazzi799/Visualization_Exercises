@@ -1,4 +1,4 @@
-# Visualization_Exercises
+# Visualization Exercises
 
 Repository that contains personal exercises regarding several topics.
 
