@@ -1,0 +1,33 @@
+The data regarding the Global Earthquakes Catalog for the period 1950-2025 can be found at: https://earthquake.usgs.gov/earthquakes/search/
+
+The U.S. Geological Survey (USGS) Earthquake Catalog is a free data source that provides data regarding reported earthquakes provided by the USGS.
+
+The applied dataset were not attached to save memory. 
+
+STEPS TO DOWNLOAD THE DATA FOR RECORED GLOBAL EARTHQUAKES WITH MAGNITURE EQUAL OR HIGHER TO 4.5 FOR THE PERIOD 1950-2025:
+
+1) Open the above reported link to the U.S. Geological Survey Earthquake Catalog;
+
+2) In the page that opens, it possible to set the different options. For this analysis, these options were set in the 'Basic Options' menu:
+- Magnitude = 4.5+
+- Date&Time = Custom (set 'Start(UTC)' as '2025-01-01 00:00:00' and 'End(UTC)' as '2025-12-31 23:59:59')
+- Geographic Region = World;
+
+3) Expand the 'Advanced Options' menu and set the following options:
+- Event type = select 'Earthquakes' only
+- leave the rest as it is;
+
+Expand the 'Output Options' and set the Format to 'CSV'. Leave the rest as it is.
+
+4) Click on the 'Search' button at the bottom. The download should start.
+
+IMPORTANT NOTE REGARDING THE DOWNLOAD OF THE DATA:	
+The Earthquake Catalog does not allow to download dataset with more than 20000 observations. Therefore, in this analysis, the above steps were perform for each single year for the period 1950-2025. To do so, after downloading the data for the year 2025, the advice is to change only the year in the custom 'Date&Time' to download the data for that period and repeat again until the year 1950. If you know faster methods to download the data, considering the constraint of the 20000 events, you are invited to apply them. 
+After downloading the data, the advice is to save the file in the 'Data' folder names as 'Year.csv', with year corresponding the one downloaded.
+
+DESCRIPTION OF THE DATA:
+Data provides information on earthquakes with magnitude equal or higher to 4.5 reported in the period 1950-2025 around the world. For a detailed list of the variables, please check the following source: https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php.
+A more detailed description of some variables is provided by the following source: https://medium.com/@ninhothedev/how-to-build-a-clean-earthquake-dataset-from-the-usgs-catalog-no-api-key-required-20d96263b29b
+
+DATA SOURCE CITATION:
+U.S. Geological Survey (USGS). (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog (ComCat). Accessed October 16, 2026, from https://earthquake.usgs.gov/earthquakes/search/

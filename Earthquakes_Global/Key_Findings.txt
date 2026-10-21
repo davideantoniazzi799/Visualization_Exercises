@@ -1,0 +1,50 @@
+Global Earthquakes (1950-2025)
+
+This folder contains a small data visualization project based on the U.S. Geological Survey (USGS) Earthquake Catalog, which provides data regarding reported global earthquakes (https://earthquake.usgs.gov/earthquakes/search/). This analysis focuses on seismic events recorded in the period 1950-2025 with magnitude equal or higher to 4.5 in the selected catalog.
+
+Everything (data cleaning, analysis, and visualization) was performed with Python. 
+
+In the 'Data' folder, there are two text files. The first ('Data_Source.txt') provides the steps to download the data from the USGS Earthquake Catalog and the specific data sources. Please, follow the indicated steps. The second file contains the missing data that were reported in the complete global earthquake dataset ('Missing_Values.txt')
+
+In the "Scripts" folder, there are the single Python code scripts that were used and develop to produce the visualizations, ordered by number.
+
+This exercises focuses on these topics and produced visualizations about them (with name of the Python file):
+- Data Cleaning (1_Data_Cleaning.py)
+- Magnitude Frequency 2000-2025 (2_Magnitude_Histogram.py);
+- Temporal Evolution of Global Earthquakes Frequency (3_Magnitude_Class_Frequency_LineChart.py);
+- Global Earthquake Map (4_Word_Map_Earthquakes.py);
+- Relation Magnitude-Focal Depth (5_Magnitude_Depth_Scatter.py)
+
+The 'Image' folder contains the visualizations (in .pdf format) produced in this exercises. Here, an analysis of them and of the results is presented for each topic, following the order of the Python scripts.
+
+- MAGNITUDE FREQUENCY 2000-2025:
+
+Images file: 1_Earthquakes_Frequency_Distribution.pdf.pdf
+
+This visualization shows the frequency distribution of reported earthquakes worldwide with a magnitude of 4.5 or higher during the period 2000–2025. The distribution indicates that earthquakes with higher magnitudes occur less frequently, whereas lower-magnitude earthquakes account for the vast majority of recorded events. This pattern is consistent with the general tendency for earthquake frequency to decrease as magnitude increases.
+
+- TEMPORAL EVOLUTION OF GLOBAL EARTHQUAKE FREQUENCY:
+
+Image: 2_Earthquakes_Trends_By_Magnitude_1950_2025.pdf
+
+This visualization illustrates the temporal evolution of reported earthquake frequency worldwide between 1950 and 2025, considering only events with a magnitude of 4.5 or higher. The line charts are divided into magnitude classes, with each class representing the number of earthquakes recorded within the corresponding magnitude range in a given year. The magnitude classes are 4.5-5.0, >5.0-5.5, >5.5-6.0, >6.0-7.0, and >7.0 or higher. For each class, the year with the highest recorded number of events is highlighted.
+For the higher-magnitude classes, the temporal distribution of recorded earthquakes does not reveal an immediately apparent long-term pattern. Instead, the annual number of events fluctuates over time, without a consistent trend clearly emerging from the visualization.
+For the 5.5-6.0 magnitude class, the number of recorded events increases by approximately 100 after 1960. However, the overall temporal pattern does not indicate a clear long-term trend. This increase may partly reflect improvements in seismic monitoring, measurement techniques, and reporting systems, although these potential explanations were not investigated in this analysis.
+A similar pattern can be observed in the lower-magnitude classes, for which more events were recorded from approximately 1970 onwards. The apparent increase in recorded frequency may be associated with improvements in earthquake detection and reporting. Consequently, the observed temporal patterns should not necessarily be interpreted as evidence of an equivalent increase in actual seismic activity.
+Interestingly, the three lower-magnitude classes all reach their respective annual peaks in 2011. This suggests that 2011 was a particularly active year in terms of the number of recorded earthquakes within these magnitude ranges, according to the criteria adopted in this study.
+
+- GLOBAL EARTHQUAKE MAP
+
+Image: 3_Global_Earthquakes_Map.pdf
+
+This visualization shows the global distribution of reported earthquakes with a magnitude of 4.5 or higher between 1950 and 2025. Each point represents an earthquake epicenter, with marker size proportional to magnitude and color indicating focal depth, measured in kilometers.
+The map highlights the concentration of recorded earthquakes along major tectonic plate boundaries, particularly around the Pacific Ocean. This spatial pattern reflects the concentration of seismic activity in tectonically active regions.
+Earthquakes with greater focal depths are also visible in several regions surrounding the Pacific Ocean, particularly along subduction zones associated with the Pacific Ring of Fire. These regions extend along the western coasts of the Americas and the eastern margins of Asia and Oceania. The distribution of deeper earthquakes is consistent with the presence of descending tectonic plates in subduction zones.
+
+- RELATION MAGNITUDE-FOCAL DEPTH:
+
+Image: 4_Magnitude_Depth_Scatter.pdf
+
+This visualization presents a scatter plot exploring the relationship between earthquake magnitude and focal depth worldwide between 1950 and 2025, considering only events with a magnitude of 4.5 or higher. The x-axis represents focal depth, measured in kilometers and defined as the depth below Earth's surface at which an earthquake originates. The y-axis represents earthquake magnitude. Points are coloured according to focal-depth classes to facilitate the comparison of events occurring at different depths.
+The scatter plot shows that earthquakes with relatively high magnitudes can occur at shallow focal depths. However, no clear monotonic relationship between magnitude and focal depth is apparent from the visualization. In other words, greater focal depth does not appear to be consistently associated with either higher or lower earthquake magnitudes.
+Most recorded events have magnitudes between 4.5 and 7.0, while earthquakes with higher magnitudes are considerably less frequent. Overall, the visualization suggests that focal depth alone is not sufficient to explain the variation in earthquake magnitude.
