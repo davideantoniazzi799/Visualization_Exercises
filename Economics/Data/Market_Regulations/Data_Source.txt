@@ -1,0 +1,70 @@
+The data regarding the Product Market Regulation (PMR) and its Indicators' performance for the period 2023-2024 can be found at: https://www.oecd.org/en/topics/product-market-regulation.html
+
+The Organisation for Economic Co-operation and Development (OECD) is an international institute that produces several investigation regarding several topics connected to Economics and provides insightful reports to shape policies to foster prosperity and opportunity, considering equality and well-being. 
+OECD, as said, provides the gathered data through specific datasets, dashboards, and tools. Here, a step-by-step procedure is presented to download the dataset used in this exercise, followed by an explanation of its variables.
+
+The applied dataset was not attached to save memory. 
+
+STEPS TO DOWNLOAD THE PMR AND ITS DATASET INDICATORS DATASET FOR THE PERIOD 2023-2024:
+
+1) Open the above reported link to the OECD PMR website;
+
+2) In the page that opens, scroll down to the 'PMR economy-wide indicators' section;
+
+3) At that point, where there is written 'Access the PMR indicators in xlsx', click on the highlighted text. The download will start;
+
+4) After that download is over, please move the file to the 'Market_Regulations' folder. Keep the file name as indicated in the R script ('PMR_Econwide_Indicator_2023-24_and_2018.xlsx').
+
+DESCRIPTION OF THE DATA:
+Data provides information on the PMR and its components divided in 2 High Level Indicators, 6 Medium Level Indicators, 15 Low Level Indicators, and a breakdown of the selected low level indicators. This analysis produced tables regarding PMR (overall indicator), High, Medium, and Low Level Indicators but not the breakdown indicators that make up the Low Level Indicators. In this folder, the file 'Acronyms_definition.txt' provides the complete names of the applied indicators in the analysis, which were shortened into acronyms. 
+As one might imagine, the PMR consists of a combination of the 2 High Level Indicators, which, in turn, are combinations of the Medium and Low Level Indicators, which, in the end, result from a combination of their breakdown indicators.
+Each indicator (PMR, High, Medium and Low Level) has range from 0 to 6, where:
+- 0 represents the highest level of openness to competition (the regulatory regime most favorable to the market and aligned with international best practices);
+- 6 represents the highest level of restriction (strict regulations, high barriers to entry, and state-induced distortions).
+Here, an explanation of the High, Medium, and Low Level Indicators is provided, starting from the PMR:
+- PMR: Product Market Regulation (PMR) refers to the set of laws and regulations that shape how firms enter, operate and compete in markets. The OECD Product Market Regulation indicators measure the extent to which these regulatory frameworks promote or hinder competition by identifying barriers to entry, expansion and competition across the economy. It is the average of the 2 High Level Indicators;
+High Level Indicators:
+- DISI (Distortions Induced by State Involvement): captures potential barriers to competition arising from the state involvement in the economy. It is the average of 3 Medium Level Indicators (DIPO, IBO, RIE);
+- BDFE (Barriers to Domestic and Foreign Entry): captures potential barriers to competition arising from the regulation on the entry of firms in the economy. It is the average of 3 Medium Level Indicators (ARB, BSNS, BTI);
+Medium Level Indicators:
+- DIPO (Distortions Induced by Public Ownership): is the average of two Low Level Indicators (QSPO, Gov_SOEs);
+- IBO (Involvement in Business Operations): is the average of 4 Low Level Indicators (RPCR, IBONS, IBOSS, PP);
+- RIE (Regulations Impact Evaluation): is the average of 2 Low Level Indicators (AIC, Int_Stakeholders);
+- ARB (Administrative and Regulatory Burden): is the average of 2 Low Level Indicators (ARLLCPE, CSARB);
+- BSNS (Barriers in Service & Network Sectors): is the average of 2 Low Level Indicators (BESS, BENS);
+- BTI (Barriers to Trade and Investment): is the average of 3 Low Level Indicators (Barr_FDI, Barr_TF, Tariff_Barriers)
+Low Level Indicators:
+- QSPO (Quality and Scope of Public Ownership): measures to what extent public ownership can distort competition;
+- Gov_SOEs (Governance of SOEs): measures to what extent state-owned enterprises are:
+• Sheltered from market discipline
+• Insulated from political inference
+• Burdened by public service obligations;
+- RPCR (Retail Price Controls and Regulation): measures the extent and type of retail price controls in the key network and service sectors;
+- IBONS (Involvement in Business Operations in Services Sectors): measures the constraints on business conduct in:
+• Professional services
+• Retail sale of medicines
+• Retail distribution;
+- IBOSS (Involvement in Business Operations in Services Sectors): measures the constraints on business conduct in:
+• E-communications
+• Energy
+• Transport;
+- PP (Public Procurement): measures the degree to which procurement rules ensure a level playing field in access to public contracts for the provision of goods, services, and public works;
+- AIC (Assessment of Impact on Competition): assesses the implementation of measures to ensure that the impact on competition of new and existing regulation is assessed and minimised;
+- Int_Stakeholders (Interaction with Stakeholders): measures how effectively stakeholders are involved in the regulatory process and how accountable and transparent the process is;
+- ARLLCPE (Administrative Requirements for Personally Owned Enterprises and Limited Liability Companies): measures the administrative burden that entrepreneurs face when starting a limited liability company and a personally owned enterprise;
+- CSARB (Communication and Simplification of Admin. and Regulatory Burden): assesses the implementation of measures aimed at simplifying administrative and regulatory requirements;
+- BESS (Barriers to Entry in Service Sectors): measures barriers to entry in
+• Professional services
+• Retail sale of medicines
+• Retail distribution;
+- BENS (Barriers to entry in Network Sectors): measures barriers to entry in
+• Energy
+• E-communications
+• Transport;
+- Barr_FDI (Barriers to FDI): measures the restrictiveness of a country's FDI rules in 22 sectors;
+- Barr_TF (Barriers to Trade Facilitation): measures the level of complexity of the technical and legal procedures for international trade, ranging from border procedures to the simplification and harmonisation of trade documents;
+- Tariff_Barriers (Tariff Barriers): reflects the level of the tariffs effectively applied
+For further information, consult https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/product-market-regulation/Methodology%20to%20build%20the%202018-23%20PMR%20indicators.pdf
+
+DATA SOURCE CITATION:
+OECD (2026), "Product Market Regulation (PMR) Economy-wide Indicators", OECD Data Explorer, https://www.oecd.org/en/topics/product-market-regulation.html

@@ -1,0 +1,30 @@
+DEFINITION OF THE ACRONYMS USED IN THE EXERCISE:
+
+- High and Medium Level Indicators:
+PMR_2023 = Product Market Regulation
+DISI = Distortions Induced by State Involvement
+BDFE = Barriers to Domestic and Foreign Entry
+DIPO = Distortions Induced by Public Ownership
+IBO = Involvement in Business Operations
+RIE = Regulations Impact Evaluation
+ARB = Administrative and Regulatory Burden
+BSNS = Barriers in Service & Network sectors
+BTI = Barriers to Trade and Investment
+
+- Low Level Indicators
+QSPO = Quality and Scope of Public Ownership
+GOV_SOEs = Governance of SOEs
+RPCR = Retail Price Controls and Regulation
+IBONS = Involvement in Business Operations in Network Sectors
+IBOSS = Involvement in Business Operations in Service Sectors
+PP = Public Procurement
+AIC = Assessment of Impact on Competition
+Int_Stakeholders = Interaction with Stakeholders
+ARLLCPE = Administrative Requirements for Limited Liability Companies and Personally-owned Enterprises
+CSARB = Communication and Simplification of  Administrative and Regulatory Burden
+BESS = Barriers to Entry in Service Sectors
+BENS = Barriers to Entry in Network Sectors
+Barr_FDI = Barriers to FDI
+Barr_TF = Barriers to Trade Facilitation
+Tarif_Barr = Tariff Barriers
+

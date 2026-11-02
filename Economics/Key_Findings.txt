@@ -1,0 +1,86 @@
+Economic Variable Analysis
+
+This folder contains a small data visualization project based on different economic measures provided by several sources. The analysis focuses on both different scales and periods, with the purpose of investigating economic variables that are usually less considered compared to others more known. 
+
+Everything (data cleaning, analysis, and visualization) was performed with RStudio. 
+
+In the 'Data' folder, there are three folders. Each folder regards the economic theme analyzed in that specific exercise. These themes were Market Regulations, Export, and Net Wealth Distribution (folder 'Wealth Inequality).
+
+In the 'Scripts' folder, there are the single R scripts that were used and develop to produce the visualizations, ordered by number.
+
+This exercises focused on these topics and produced visualizations about them (with name of the Python file):
+- Market Regulations in 2023 provided by the OECD (1_Market_Regulations.R)
+- Export structure comparison between Germany and Italy in 2023 (2_Exports.R);
+- Net Wealth distribution among households at a country level in the Euro area in 2023 provided by the ECB (3_Wealth_Inequality.R)
+
+The 'Image' folder contains the visualizations (in .pdf and .html format) produced in this exercises. Here, an analysis of them and of the results is presented for each topic, following the order of the R scripts.
+
+- 2023 OECD COUNTRIES PMR'S INDICATORS PERFORMANCE:
+
+This analysis presents two tables showing the Product Market Regulation (PMR) scores and their underlying indicators for OECD and selected non-OECD countries in 2023.
+The PMR is an indicator developed by the OECD to assess the extent to which a country's regulatory framework promotes or restricts competition. It identifies regulatory barriers to market entry, business expansion, and competition across the economy.
+The PMR framework is structured into different levels of indicators. At the lowest level, 15 Low-Level Indicators are aggregated into 6 Medium-Level Indicators. These are then used to calculate 2 High-Level Indicators, which together determine the overall PMR score. Each indicator is measured on a scale ranging from 0 (least restrictive regulatory framework) to 6 (most restrictive regulatory framework).
+The 'Data_Source.txt' file, located in the 'Data' folder within the 'Market_Regulations' directory, provides further information on the meaning and methodology of each indicator.
+The first table focuses on the overall PMR score and its High- and Medium-Level Indicators, while the second presents the PMR score alongside the 15 Low-Level Indicators. Both visualizations are available in the Images folder.
+
+Image: 1_PMR_Performance_2023_High_Medium_Indicators.pdf
+
+This table compares OECD and non-OECD countries in terms of their overall PMR scores and the two High-Level and six Medium-Level Indicators in 2023.
+Looking first at the overall PMR scores, European countries, particularly those in Northern Europe, generally report the lowest values, indicating less restrictive regulatory frameworks. To better understand these results, it is useful to examine the two High-Level Indicators and their underlying components.
+Sweden, which recorded the lowest overall PMR score, also ranked first in the BDFE (Barriers to Domestic and Foreign Entry) indicator and third in the DISI (Distortions Induced by State Involvement) indicator. This suggests that Sweden combines relatively low barriers to market entry with a limited degree of competition-distorting state involvement in the economy.
+Similar patterns can be observed in several other European countries, suggesting that, according to the PMR framework, many European economies have relatively fewer regulatory barriers to competition compared with countries in other regions.
+Conversely, several countries outside Europe recorded higher PMR scores and therefore more restrictive regulatory frameworks. Among the African countries included in the analysis, Kenya, South Africa, and Morocco reported relatively high PMR scores, with Kenya recording the highest overall value. Morocco also recorded the highest DISI score, indicating a particularly high degree of competition-distorting state involvement. Kenya, on the other hand, recorded the highest BDFE score, suggesting substantial regulatory barriers to domestic and foreign market entry.
+Similar patterns can be observed in several Asian countries, where relatively high PMR scores reflect a combination of barriers to market entry and state involvement in the economy.
+Looking more closely at the Medium-Level Indicators provides a more detailed picture of the regulatory differences within Europe. Overall, Scandinavian countries, the Baltic states, Northern European countries, and the British Isles tend to report relatively low scores across several regulatory dimensions.
+Finally, it is worth noting that the analysis covers a limited selection of countries. Including a larger and more geographically representative sample could provide a broader understanding of global differences in product market regulation.
+
+Image: 2_PMR_Performance_2023_Low_Indicators.pdf
+
+This table presents the overall PMR scores alongside the 15 Low-Level Indicators, providing a more detailed breakdown of the regulatory dimensions underlying the results discussed above.
+As expected, the patterns observed across the Low-Level Indicators are generally consistent with those identified in the High- and Medium-Level Indicators, since the latter are derived from the aggregation of the former.
+However, a closer examination reveals some interesting differences. In particular, certain countries that recorded relatively high scores in some of the High- and Medium-Level Indicators also performed comparatively well in specific Low-Level Indicators. This suggests that restrictive regulatory frameworks do not necessarily affect all dimensions of product market regulation equally.
+Overall, this table provides a more detailed perspective on cross-country differences in market regulation, highlighting the specific regulatory areas in which countries perform relatively well or poorly. It also offers further insight into the differences between European and non-European countries in terms of barriers to market entry and the degree of competition-distorting state involvement in the economy.
+
+- COMPARISON OF GERMANY AND ITALY'S EXPORT CATEGORIES IN 2023:
+
+Image: 3_export_comparison_deu_ita.html
+
+This visualization is provided in HTML format to allow users to interact with the tables. It compares the export structures of Germany and Italy in 2023, breaking down their exports into product categories, represented by different colors, and individual sectors, classified according to the World Customs Organization's Harmonized System (HS) 2022 nomenclature.
+The data source is the Harvard Growth Lab's Atlas of Economic Complexity, developed at Harvard University. Further details about the dataset and its methodology are provided in the 'Data_Source.txt' file, located in the 'Data' folder within the 'Exports' directory.
+The main objective of this visualization is to compare the export structures of the two European economies, identifying the sectors with the highest export values and highlighting potential differences in their productive specializations.
+It is important to clarify that this comparison does not allow conclusions to be drawn about which economic system is better or more advanced. Furthermore, the visualization reports absolute export values. Therefore, a higher export value in a specific sector does not necessarily imply that a country is more technologically advanced, productive, or competitive in that sector. Export performance and economic specialization depend on several factors that are beyond the scope of this analysis.
+Based on the selected classification, Machinery & Electronics represents the largest export category in both countries. Within this category, Industrial Machinery accounts for the highest export value, highlighting the importance of industrial manufacturing in both economies.
+However, the second-largest export category differs between the two countries. In Italy, Mineral & Chemicals ranks second, whereas in Germany this position is occupied by Transport & Equipment. Agriculture & Foodstuffs ranks fifth in both countries.
+Finally, the interactive tables allow users to explore the individual sectors in greater detail. By hovering over the rectangles, including the smaller ones, users can access a pop-up displaying the corresponding sector name and export value.
+
+Controlla che non ci siano errori o cose che potevano essere scritte meglio:
+
+- COMPARISON OF NET WEALTH DISTRIBUTION ACROSS HOUSEHOLD WEALTH GROUPS IN THE EURO AAREA (2015 Q4-2025 Q4):
+
+This series of visualizations illustrates the distribution of household net wealth across different wealth groups in the euro area and how their respective shares changed between the fourth quarter of 2015 (Q4 2015) and the fourth quarter of 2025 (Q4 2025).
+The data are provided by the European Central Bank (ECB). Further information regarding the data source and methodology can be found in the 'Data_Source.txt' file, located in the 'Wealth_Inequality' folder within the 'Data' directory.
+The visualizations, available in the 'Images' folder, compare the shares of total net wealth held by the wealthiest 5%, the wealthiest 10%, and the bottom 50% of households across euro area countries.
+The ECB defines household net wealth as the difference between total household assets (both financial and non-financial) and total liabilities (including debt).
+
+Image: 4_Top5_NetWealth_dumbbell_EuroArea.pdf
+
+The first visualization focuses on the share of net wealth held by the wealthiest 5% of households and its variation between Q4 2015 and Q4 2025.
+Looking first at the distribution in Q4 2025, the results show a high concentration of net wealth among the wealthiest households. In Austria, Italy, and Finland, the top 5% held slightly more than 50% of total household net wealth. Italy and Finland experienced substantial increases in this share over the previous ten years, whereas Austria showed virtually no variation during the same period.
+At the other end of the distribution, Malta and Cyprus recorded the lowest shares of net wealth held by the wealthiest 5%. The share was approximately 20% in Malta and close to 30% in Cyprus. In most of the other euro area countries, the wealthiest 5% held between approximately 35% and 50% of total household net wealth.
+Regarding changes over time, the share of net wealth held by the top 5% increased in some countries and decreased in others. Cyprus, Malta, Ireland, Slovakia, and Luxembourg recorded notable reductions, whereas Italy, Finland, and Greece experienced substantial increases.
+The factors underlying these differences and changes over time were not investigated in this analysis.
+
+Image: 5_Top10_NetWealth_dumbbell_EuroArea.pdf
+
+The second visualization examines the share of net wealth held by the wealthiest 10% of households and its variation between Q4 2015 and Q4 2025.
+The overall patterns are similar to those observed in the previous visualization, as the wealthiest 5% are included within the top 10%. Consequently, the two distributions show comparable trends across countries, although the broader group provides a different perspective on wealth concentration.
+The most noticeable difference concerns the overall share of net wealth held by this group, which is naturally higher than that of the top 5%. In Q4 2025, countries such as Austria, Italy, Finland, Germany, and Portugal recorded shares of approximately 60% for the wealthiest 10% of households.
+Across the euro area, the top 10% generally held approximately 50-55% of total household net wealth. These figures highlight the substantial concentration of wealth among the richest households and the resulting disparity between the wealthiest and the rest of the population.
+
+Image: 6_Bottom50_NetWealth_dumbbell_EuroArea.pdf
+
+The third visualization focuses on the share of net wealth held by the bottom 50% of households, ranked according to their wealth, and its variation between Q4 2015 and Q4 2025.
+Looking at the distribution in Q4 2025, Slovakia recorded the highest share of net wealth held by this group, at approximately 15%, followed by Malta, at around 13%. The remaining euro area countries recorded shares below 12%, while the euro area average (21 countries) was close to just 5%.
+At the other end of the distribution, Germany and Finland recorded the lowest shares, mirroring the patterns observed in the previous visualizations. Finland also experienced a substantial reduction in the share of net wealth held by the bottom 50% over the period.
+Regarding changes between 2015 and 2025, Finland was the only country to record a substantial decline in this group's share of total net wealth. Conversely, Ireland, Cyprus, Estonia, and Slovakia experienced notable increases.
+These results provide a complementary perspective on wealth concentration across the euro area. In particular, the relatively small share of net wealth held by the bottom 50% in several countries highlights the substantial disparities between the wealthiest and least wealthy households. The underlying reasons for these differences and changes were not investigated in this analysis.   

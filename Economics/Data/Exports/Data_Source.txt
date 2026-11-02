@@ -1,0 +1,46 @@
+The data regarding the Exports Structures of Germany and Italy in 2023 can be found at: https://atlas.hks.harvard.edu/data-downloads/
+
+The Atlas of Economic Complexity (AEC) provides comprehensive international trade data covering over 6,000 products across 250 countries and territories. 
+The AEC belongs is part of Harvard's Growth Lab Viz Hub, which belongs to the Harvard College. Here, a step-by-step procedure is presented to download the dataset used in this exercise, followed by an explanation of its variables. Additionally, the procedure presents how to obtain the classification of each product.
+
+The applied datasets were not attached to save memory. 
+
+STEPS TO DOWNLOAD THE EXPORT DATA BY COUNTRY:
+
+1) Open the above reported link to the Atlas Data Downloads website;
+
+2) In the page that opens, you will see a table with several datasets. To download the exports dataset, set the following options (click on the down arrow for the provided options): 
+- Classification: HS22
+- Product Level: 2 digit;
+
+3) At that point, the table should show only two datasets. The applied dataset in this exercise is 'Country Trade by Product'. On the right side of the table, click on Download;
+
+4) In the page that opens, click on 'Download Data' at the top-right;
+
+5) After that download is over, please move the file to the 'Exports' folder. Keep the file name as indicated in the R script ('hs22_country_product_year_2.csv').
+
+STEPS TO DOWNLOAD THE PRODUCT CLASSIFICATION DATASET:
+
+1) Open the above reported link to the Atlas Data Downloads website;
+
+2) In the page that opens, you will see a table with several datasets. To download the exports dataset, set the following options (click on the down arrow for the provided options): 
+- Classification: HS22
+- Data Type: Classification;
+
+3) At that point, the table should show only one dataset. The applied dataset in this exercise is 'HS22 Product Classification'. On the right side of the table, click on Download;
+
+4) In the page that opens, click on 'Download Data' at the top-right;
+
+5) After that download is over, please move the file to the 'Exports' folder. Keep the file name as indicated in the R script ('product_hs22.csv').
+
+DESCRIPTION OF THE DATA:
+Data provides information on International Trade Data (HS22). It includes data from 2022-2024 and is classified as Unilateral Trade with HS22 classification at the 2-digit level. The filtering settings for Germany and Italy are provided in the R script used for this exercise. Export values are reported in current USD ($). Further explanations of the provided columns in the dataset are provided in the window just before its download.
+The dataset regarding the Product Classification contains information about Classifications Data. It includes data from various years and is classified as Classifications with HS22 classification. Further information regarding the different variables is provided in the window just before its download.
+Information regarding the HS22 classification can be found at this website: https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition/hs-nomenclature-2022-edition.aspx
+
+DATA SOURCE CITATION:
+- Exports dataset: 
+The Growth Lab at Harvard University, 2026, "International Trade Data (HS22)", https://doi.org/10.7910/DVN/FTUUJU, Harvard Dataverse
+
+- Product classification dataset: 
+The Growth Lab at Harvard University, 2026, "Classifications Data", https://doi.org/10.7910/DVN/3BAL1O, Harvard Dataverse

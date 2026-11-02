@@ -1,0 +1,74 @@
+The data regarding the Households Net Wealth in the Euro Area can be found at: https://data.ecb.europa.eu/data/data-categories/macroeconomic-and-sectoral-statistics/sector-accounts/distributional-wealth-accounts?layerType=AL
+
+The European Central Bank (ECB) provides the ECB Data Portal, a huge dashboard with several economical datasets that connect with factors from other sectors and subjects. Here, the step-by-step description  to download the data for the share of Net Wealth owned by top 5% and 10% richest families in the Euro area, including households that belong to the bottom 50% is provided. The classification of the households is based on the Net Wealth Concept, presented later.
+
+The applied datasets were not attached to save memory. 
+
+
+STEPS TO DOWNLOAD THE SHARE OF THE BOTTOM 50 HOUSEHOLDS PERCENT IN TERMS OF OWNED NET WEALTH BY COUNTRY:
+
+1) Open the above reported link to the ECB Data Portal;
+
+2) In the page that opens, search for this dataset: 'Net wealth of households, share of bottom 50 percent, Euro area 21, Quarterly';
+
+3) When you see the dataset, there should be a menu option called 'More geographical areas' colored in blue that can be expanded. Expand it;
+
+4) Proceed to select all countries except Hungary;
+
+5) After selecting the countries, look for the long horizontal menu tab that is at the right of 'Filter'. Click on the download option (the down arrow);
+
+6) After that download is over, please move the file to the 'Wealth_Inequality' folder. Keep the file name as indicated in the R script ('Bottom50_share.xlsx').
+
+
+STEPS TO DOWNLOAD THE SHARE OF THE TOP 10 HOUSEHOLDS PERCENT IN TERMS OF OWNED NET WEALTH BY COUNTRY:
+
+1) Open the above reported link to the ECB Data Portal;
+
+2) In the page that opens, search for this dataset: 'Net wealth of households, share of top 10 percent, Euro area 20, Quarterly';
+
+3) When you see the dataset, there should be a menu option called 'More geographical areas' colored in blue that can be expanded. Expand it;
+
+4) Proceed to select all countries except Hungary;
+
+5) After selecting the countries, look for the long horizontal menu tab that is at the right of 'Filter'. Click on the download option (the down arrow);
+
+6) After that download is over, please move the file to the 'Wealth_Inequality' folder. Keep the file name as indicated in the R script ('Top10_share.xlsx').
+
+
+STEPS TO DOWNLOAD THE SHARE OF THE TOP 5 HOUSEHOLDS PERCENT IN TERMS OF OWNED NET WEALTH BY COUNTRY:
+
+1) Open the above reported link to the ECB Data Portal;
+
+2) In the page that opens, search for this dataset: 'Net wealth of households, share of top 5 percent, Euro area 20, Quarterly';
+
+3) When you see the dataset, there should be a menu option called 'More geographical areas' colored in blue that can be expanded. Expand it;
+
+4) Proceed to select all countries except Hungary;
+
+5) After selecting the countries, look for the long horizontal menu tab that is at the right of 'Filter'. Click on the download option (the down arrow);
+
+6) After that download is over, please move the file to the 'Wealth_Inequality' folder. Keep the file name as indicated in the R script ('Top5_share.xlsx').
+
+
+DESCRIPTION OF THE DATA:
+These time series are part of the European Central Bank's Distributional Wealth Accounts (DWA). The datasets measure, on a quarterly basis, the share of total net wealth held by the top 5%, top 10% and bottom 50% wealthiest households in the euro area.
+The geographical scope is the 20-country euro area (based on the fixed official composition established in 2023). The data, expressed as percentages, have not undergone any distortive mathematical transformations and are based on the valuation standards of the European System of Accounts (SNA/ESA). They serve as a key tool for monitoring economic inequality and the concentration of wealth.
+Net wealth Concept:
+The ECB defines a household's net wealth as the mathematical difference between its total assets (both financial and non-financial) and its total liabilities (debts).
+- Assets included: Real estate (housing wealth), bank deposits, publicly traded shares, investment fund units, life insurance, and business wealth.
+- Liabilities included: Mortgages and other forms of debt/financing incurred by households.
+- Technical note: In its DWA (Distributional Wealth Accounts), the ECB uses a concept of "adjusted" wealth, excluding only those complex instruments from the national accounts that are not statistically comparable with household sample surveys.
+To calculate this indicator, the ECB ranks the entire population of the euro area - from the poorest household to the wealthiest - based on the net wealth defined above.
+The "Top 5 %" specifically identifies the share of wealth concentrated at the very top of this ranking - that is, the final 5 % of the distribution (from the 95th to the 100th percentile). The ECB uses this indicator to measure the degree of asymmetry and the precise concentration of wealth held by the wealthiest households in the Eurozone. 
+The "Top 10 %" specifically identifies the share of wealth concentrated at the very top of this ranking - that is, the final 10 % of the distribution (from the 90th to the 100th percentile). The ECB uses this indicator to measure the degree of asymmetry and the precise concentration of wealth held by the wealthiest households in the Eurozone.
+The "Bottom 50 %" specifically identifies the portion of accumulated wealth at the base of this ranking - that is, the first half of the distribution (from the 0th to the 50th percentile). The institution uses this indicator to measure the degree of asymmetry and the level of economic vulnerability or wealth-related marginalization among the least affluent households in the Eurozone.
+
+DATA SOURCE CITATION:
+- Share of Net Wealth owned by the Bottom 50 percent Households:
+European Central Bank. (2026). Net wealth of households, share of bottom 50 percent, Euro area 21, Quarterly (Series key: DWA.Q.I10.S14._Z._Z.NWA.B50.PT.S.N). ECB Data Portal. https://data.ecb.europa.eu/data/datasets/DWA/DWA.Q.I10.S14._Z._Z.NWA.B50.PT.S.N
+
+- Share of Net Wealth owned by the Top 10 percent Households:
+European Central Bank. (2026). Net wealth of households, share of top 10 percent, Euro area 20, Quarterly (Series key: DWA.Q.I9.S14._Z._Z.NWA.T10.PT.S.N). ECB Data Portal. https://data.ecb.europa.eu/data/datasets/DWA/DWA.Q.I9.S14._Z._Z.NWA.T10.PT.S.N
+
+- Share of Net Wealth owned by the Top 5 percent Households: 
+European Central Bank. (2026). Net wealth of households, share of top 5 percent, Euro area 20, Quarterly (Series key: DWA.Q.I9.S14._Z._Z.NWA.T5.PT.S.N). ECB Data Portal. https://data.ecb.europa.eu/data/datasets/DWA/DWA.Q.I9.S14._Z._Z.NWA.T5.PT.S.N
